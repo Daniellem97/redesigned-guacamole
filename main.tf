@@ -3,7 +3,6 @@ module "iam_example_user" {
   for_each = var.iam_users
 
   name = each.value.name
-  type = "user" # Add this line
 }
 
 module "iam_example_role" {
@@ -11,5 +10,4 @@ module "iam_example_role" {
   for_each = var.iam_roles
 
   name = each.value.name
-  type = "role" # Add this line
 }
