@@ -21,12 +21,3 @@ resource "aws_iam_role" "role" {
     ]
   })
 }
-
-variable "name" {
-  type = string
-}
-
-variable "type" {
-  type = string
-  description = "Type of IAM entity to create: 'user' or 'role'."
-}
