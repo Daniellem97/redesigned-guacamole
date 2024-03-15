@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-west-2" # Change to your desired AWS region
+}
+
 module "iam_example_user" {
   source  = "./modules/iam"
   for_each = var.iam_users
